@@ -1,1 +1,12 @@
-// import config from '~/config';
+
+
+import config from '../config';
+
+const publicRoutes = [
+     //  { path: config.routes.home, component: Home },
+
+];
+
+const privateRoutes = [];
+
+export { publicRoutes, privateRoutes };

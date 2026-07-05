@@ -5,7 +5,6 @@ import { SearchIcon } from '../../../components/Icons/Icons';
 
 import AccountItem from '../../../components/AccountItem';
 
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useState, useRef } from 'react';
 import { Wrapper as PopperWrapper } from '../../../components/Popper';
@@ -16,7 +15,6 @@ function Search() {
     const [searchValue, setSearchValue] = useState('');
     const [searchResult, setSearchResult] = useState([]);
     const [showResult, setShowResult] = useState(false);
-
     const [loading, setLoading] = useState(false);
     const inputRef = useRef();
 

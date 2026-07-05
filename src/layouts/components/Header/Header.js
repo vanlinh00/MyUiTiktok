@@ -1,10 +1,15 @@
 import classNames from "classnames/bind";
 import styles from "./Header.module.scss";
 import images from "../../../assets/images";
+import Tippy from '@tippyjs/react';
 
 import { Link } from "react-router-dom";
 import config from "../../../config";
 import Search from "../Search";
+import { InboxIcon, MessageIcon, UploadIcon } from '../../../components/Icons';
+import Button from '../../../components/Button';
+import Menu from '../../../components/Popper/Menu';
+
 const cx = classNames.bind(styles);
 const MENU_ITEMS = [
   {
@@ -69,9 +74,52 @@ function Header() {
       <Link to={config.routes.home} className={cx("logo-link")}>
         <img src={images.logo} alt="Tiktok" />
       </Link>
-       <Search />
-      
-    
+      <Search />
+
+      <div className={cx("actions")}>
+        {currentUser ? (
+          <>
+            <Tippy delay={[0, 50]} content="Upload video" placement="bottom">
+              <button className={cx("action-btn")}>
+                <UploadIcon />
+              </button>
+            </Tippy>
+            <Tippy delay={[0, 50]} content="Message" placement="bottom">
+              <button className={cx("action-btn")}>
+                <MessageIcon />
+              </button>
+            </Tippy>
+            <Tippy delay={[0, 50]} content="Inbox" placement="bottom">
+              <Link to={config.routes.chat} className={cx("action-btn")}>
+                <InboxIcon />
+                <span className={cx("badge")}>12</span>
+              </Link>
+            </Tippy>
+          </>
+        ) : (
+          <>
+            <Button text>Upload</Button>
+            <Button primary>Log in</Button>
+          </>
+        )}
+
+        <Menu
+          items={currentUser ? userMenu : MENU_ITEMS}
+          onChange={handleMenuChange}
+        >
+          {/* {currentUser ? (
+            <Image
+              className={cx("user-avatar")}
+              src="https://files.f8.edu.vn/f8-prod/user_avatars/1/623d4b2d95cec.png"
+              alt="Nguyen Van A"
+            />
+          ) : (
+            <button className={cx("more-btn")}>
+              <FontAwesomeIcon icon={faEllipsisVertical} />
+            </button>
+          )} */}
+        </Menu>
+      </div>
     </header>
   );
 }

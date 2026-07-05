@@ -4,10 +4,17 @@
     --search-top-spacer: 9px;
     --search-button-width: 52px;
 
-   
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+   // background-color: var(--white);
+       background-color: #ffffff;
+
+    border-bottom: 1px solid rgba(22, 24, 35, 0.12);
 }
 
 .inner {
+    
     height: 100%;
     width: var(--default-layout-width);
     padding: 0 var(--default-layout-horizontal-spacer);

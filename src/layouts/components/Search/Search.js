@@ -1,8 +1,9 @@
-// import {useEffect, useState,useRef} from 'react';
-// import { faCircleXmark, faSpinner } from '@fortawesome/free-solid-svg-icons';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+function Search() {
+  return (
+    <div>
+      <input type="text" placeholder="Search accounts and videos" />
+    </div>
+  );
+}
 
-
-// function Search() {
-    
-// }
+export default Search;

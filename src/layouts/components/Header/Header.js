@@ -103,10 +103,10 @@ function Header() {
           </>
         )}
 
-        <Menu
+        {/* <Menu
           items={currentUser ? userMenu : MENU_ITEMS}
           onChange={handleMenuChange}
-        >
+        > */}
           {/* {currentUser ? (
             <Image
               className={cx("user-avatar")}
@@ -118,7 +118,7 @@ function Header() {
               <FontAwesomeIcon icon={faEllipsisVertical} />
             </button>
           )} */}
-        </Menu>
+        {/* </Menu> */}
       </div>
     </header>
   );

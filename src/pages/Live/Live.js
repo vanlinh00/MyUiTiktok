@@ -38,6 +38,48 @@ const MOCK_LIVE = [
         viewers: '12.5K',
         avatar: 'https://p16-sign-va.tiktokcdn.com/...', // Link ảnh thật
         thumb: 'https://p16-sign-va.tiktokcdn.com/...',
+    }, {
+        id: 2,
+        user: 'theanh28entertainment2',
+        desc: 'Tin tức nóng hổi 24h',
+        viewers: '12.5K',
+        avatar: 'https://p16-sign-va.tiktokcdn.com/...', // Link ảnh thật
+        thumb: 'https://p16-sign-va.tiktokcdn.com/...',
+    }, {
+        id: 2,
+        user: 'theanh28entertainment2',
+        desc: 'Tin tức nóng hổi 24h',
+        viewers: '12.5K',
+        avatar: 'https://p16-sign-va.tiktokcdn.com/...', // Link ảnh thật
+        thumb: 'https://p16-sign-va.tiktokcdn.com/...',
+    }, {
+        id: 2,
+        user: 'theanh28entertainment2',
+        desc: 'Tin tức nóng hổi 24h',
+        viewers: '12.5K',
+        avatar: 'https://p16-sign-va.tiktokcdn.com/...', // Link ảnh thật
+        thumb: 'https://p16-sign-va.tiktokcdn.com/...',
+    }, {
+        id: 2,
+        user: 'theanh28entertainment2',
+        desc: 'Tin tức nóng hổi 24h',
+        viewers: '12.5K',
+        avatar: 'https://p16-sign-va.tiktokcdn.com/...', // Link ảnh thật
+        thumb: 'https://p16-sign-va.tiktokcdn.com/...',
+    }, {
+        id: 2,
+        user: 'theanh28entertainment2',
+        desc: 'Tin tức nóng hổi 24h',
+        viewers: '12.5K',
+        avatar: 'https://p16-sign-va.tiktokcdn.com/...', // Link ảnh thật
+        thumb: 'https://p16-sign-va.tiktokcdn.com/...',
+    }, {
+        id: 2,
+        user: 'theanh28entertainment2',
+        desc: 'Tin tức nóng hổi 24h',
+        viewers: '12.5K',
+        avatar: 'https://p16-sign-va.tiktokcdn.com/...', // Link ảnh thật
+        thumb: 'https://p16-sign-va.tiktokcdn.com/...',
     },
     // ... thêm các item khác
 ];

@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import styles from './Live.module.scss';
-import Image from '../../components/Image'; // Giả sử bạn đã có component Image xử lý lỗi fallback
+import Image from '../../components/Image'; 
 
 const cx = classNames.bind(styles);
 

@@ -71,6 +71,8 @@ function Header() {
   ];
   return (
     <header className={cx("wrapper")}>
+
+                  <div className={cx('inner')}>
       <Link to={config.routes.home} className={cx("logo-link")}>
         <img src={images.logo} alt="Tiktok" />
       </Link>
@@ -107,19 +109,13 @@ function Header() {
           items={currentUser ? userMenu : MENU_ITEMS}
           onChange={handleMenuChange}
         >
-          {/* { {currentUser ? (
-            <Image
-              className={cx("user-avatar")}
-              src="https://files.f8.edu.vn/f8-prod/user_avatars/1/623d4b2d95cec.png"
-              alt="Nguyen Van A"
-            />
-          ) : (
-            <button className={cx("more-btn")}>
-              <FontAwesomeIcon icon={faEllipsisVertical} />
-            </button>
-          )} } */}
+               <button className={cx('more-btn')}>
+
+                            </button>
         </Menu>
       </div>
+                  </div>
+
     </header>
   );
 }

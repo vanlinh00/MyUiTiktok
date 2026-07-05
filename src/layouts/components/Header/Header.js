@@ -103,11 +103,11 @@ function Header() {
           </>
         )}
 
-        {/* <Menu
+        <Menu
           items={currentUser ? userMenu : MENU_ITEMS}
           onChange={handleMenuChange}
-        > */}
-          {/* {currentUser ? (
+        >
+          {/* { {currentUser ? (
             <Image
               className={cx("user-avatar")}
               src="https://files.f8.edu.vn/f8-prod/user_avatars/1/623d4b2d95cec.png"
@@ -117,8 +117,8 @@ function Header() {
             <button className={cx("more-btn")}>
               <FontAwesomeIcon icon={faEllipsisVertical} />
             </button>
-          )} */}
-        {/* </Menu> */}
+          )} } */}
+        </Menu>
       </div>
     </header>
   );

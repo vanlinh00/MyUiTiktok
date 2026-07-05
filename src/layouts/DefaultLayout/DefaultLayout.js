@@ -9,14 +9,12 @@ function DefaultLayout({ children }) {
   return (
     <div className={cx("wrapper")}>
       <Header />
-      {/* <div className={cx("content")}>{children}</div>
-      <h2>Footer</h2> */}
 
-      <div className={cx('container')}>
-                <Sidebar />
-                <div className={cx('content')}>{children}</div>
-            </div>
-
+      <div className={cx("container")}>
+        <Sidebar />
+        <div className={cx("content")}>{children}</div>
+      </div>
+      <h2>Footer</h2>
     </div>
   );
 }
